@@ -110,6 +110,6 @@ class SubnetCalculator(Script):
             self.log_success("Maximum number of subnets is: " + str(2 ** abs(24 - no_ones)))
 
         except KeyboardInterrupt:
-            print("Interrupted by the User, exiting\n")
+            self.log_failure("Interrupted by the User")
         except ValueError:
-            print("Seem to have entered an incorrect value, exiting\n")
+            self.log_failure("Incorrect value has been provided")
