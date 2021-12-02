@@ -2,7 +2,6 @@
 from django.utils.text import slugify
 from netmiko import ConnectHandler
 import netbox.settings
-from django.forms import PasswordInput
 from extras.scripts import *
 
 
