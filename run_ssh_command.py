@@ -12,7 +12,7 @@ class RunCommand(Script):
         field_order = ['input_ip', 'input_username', 'input_pass', 'input_command']
 
 
-    input_ip = IPAddressVar(
+    input_ip = StringVar(
         description="Enter the IP Address:"
     )
     input_username = StringVar(
