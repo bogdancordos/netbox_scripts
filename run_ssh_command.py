@@ -14,7 +14,6 @@ class RunCommand(Script):
 
     input_ip = IPAddressVar(
         description="Enter the IP Address:"
-
     )
     input_username = StringVar(
         description="Enter username:"
