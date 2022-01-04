@@ -47,5 +47,5 @@ class RunCommand(Script):
             output = net_connect.send_command(command)
 
 
-            self.log_success("View the information in the Output tab")
+            self.log_success("View the information bellow")
         return '' .join(output)
