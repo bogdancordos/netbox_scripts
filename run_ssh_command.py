@@ -33,5 +33,5 @@ class RunCommand(Script):
         with ConnectHandler(**cisco1) as net_connect:
             output = net_connect.send_command(command)
 
-            self.log_success("View the information the in Output tab")
+            self.log_success("View the information bellow")
         return ''.join(output)
