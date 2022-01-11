@@ -1,2 +1,2 @@
 # netbox_scripts
-Collection of Netbox custom scripts
+Collection of NetBox custom scripts
