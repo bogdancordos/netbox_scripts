@@ -4,18 +4,18 @@ from extras.scripts import *
 
 class RunCommand(Script):
     class Meta:
-        name = "Lookup public IP for Domain details"
-        description = "Lookup public IP for Domain details"
-        field_order = ['input_ip']
+        name = "Lookup IP or domain"
+        description = "Lookup IP or domain"
+        field_order = ['input_data']
 
-    input_ip = StringVar(
-        description="Lookup IP"
+    input_data = StringVar(
+        description="Lookup IP or Domain"
     )
 
 
     def run(self, data, commit):
 
-        url = "http://ipwhois.app/json/%s" % data['input_ip']
+        url = "http://ipwhois.app/json/%s" % data['input_data']
 
         payload={}
         headers = {}
