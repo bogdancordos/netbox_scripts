@@ -11,7 +11,7 @@ class RunCommand(Script):
     class Meta:
         name = "View AP Associated Clients"
         description = "View AP Associated Clients"
-        field_order = ['select_device']
+        field_order = ['role', 'select_device']
 
     role = ObjectVar(
         model = DeviceRole,
