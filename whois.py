@@ -27,7 +27,7 @@ class RunCommand(Script):
         #
         #Available fields:ip,success,type,continent,continent_code,country,country_code,country_flag,country_capital,country_phone,country_neighbours,
         #                 region,city,latitude,longitude,asn,org,isp,timezone,timezone_name,timezone_dstOffset,timezone_gmtOffset,timezone_gmt,currency
-        #                 currency_code,currency_symbol,currency_rates,currency_plural,completed_requests
+        #                 currency_code,currency_symbol,currency_rates,currency_plural
         
         self.log_success(f"IP :" + output['ip'])
         self.log_success(f"Type :" + output['type'])
@@ -40,5 +40,5 @@ class RunCommand(Script):
         self.log_success(f"ISP :" + output['isp'])
         self.log_success(f"Timezone :" + output['timezone'])
 
-        #Requests tracking as unpaid version allow 10,000 requests per month
-        return(output['completed_requests'])
+        
+        return("Done")
